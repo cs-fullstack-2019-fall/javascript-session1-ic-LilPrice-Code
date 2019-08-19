@@ -17,12 +17,15 @@ function main() {
             var userPut = prompt("Enter 'A', 'B', or 'C'.");
             if (userPut.toUpperCase() === "A"){
                 alert("A");
+                return userPut;
             }
             else if (userPut.toUpperCase() === "B"){
                 alert("B");
+                return userPut;
             }
             else if (userPut.toUpperCase() === "C"){
                 alert("C");
+                return userPut;
             }
         }
         else if (parseInt(userInput) === 2){
@@ -34,9 +37,11 @@ function main() {
         else if (userInput.toUpperCase() === "Q"){
             break;
         }
-        else {
-            alert("INVALID ANSWER!")
+        else{
+            alert("INVALID ANSWER")
         }
+
     }
 }
+
 main();
